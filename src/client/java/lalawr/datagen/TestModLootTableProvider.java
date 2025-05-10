@@ -9,7 +9,7 @@ import java.util.concurrent.CompletableFuture;
 public class TestModLootTableProvider extends FabricBlockLootTableProvider {
 
 
-    protected TestModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+    public TestModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
 

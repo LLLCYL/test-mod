@@ -1,5 +1,6 @@
 package lalawr.datagen;
 
+import lalawr.item.TestModItemGroups;
 import lalawr.item.TestModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
@@ -16,5 +17,6 @@ public class TestModEnglishLangProvider extends FabricLanguageProvider{
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(TestModItems.SUSPICIOUS_SUBSTANCE,"Suspicious Substance");
+        translationBuilder.add(TestModItemGroups.CUSTOM_ITEM_GROUP_KEY,"Test Mod Items");
     }
 }
