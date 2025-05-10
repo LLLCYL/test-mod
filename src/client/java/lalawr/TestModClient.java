@@ -5,6 +5,6 @@ import net.fabricmc.api.ClientModInitializer;
 public class TestModClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
+		// 此入口点适用于设置特定于客户端的逻辑，例如渲染。
 	}
 }
