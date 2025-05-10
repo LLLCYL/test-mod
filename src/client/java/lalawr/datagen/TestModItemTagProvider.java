@@ -14,6 +14,6 @@ public class TestModItemTagProvider extends FabricTagProvider.ItemTagProvider{
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-
+//        getOrCreateTagBuilder(ItemTags.BEE_FOOD).add(TestModItems.SUSPICIOUS_SUBSTANCE);
     }
 }

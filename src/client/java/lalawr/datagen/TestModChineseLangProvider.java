@@ -7,14 +7,14 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-public class TestModEnglishLangProvider extends FabricLanguageProvider{
-    public TestModEnglishLangProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class TestModChineseLangProvider extends FabricLanguageProvider{
+    public TestModChineseLangProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         // 指定 en_us 是可选的，因为它是默认语言代码
-        super(dataOutput, "en_us", registryLookup);
+        super(dataOutput, "zh_cn", registryLookup);
     }
 
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add(TestModItems.SUSPICIOUS_SUBSTANCE,"Suspicious Substance");
+        translationBuilder.add(TestModItems.SUSPICIOUS_SUBSTANCE,"可疑的物品");
     }
 }
