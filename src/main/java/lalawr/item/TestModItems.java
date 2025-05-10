@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
-public class ModItems {
+public class TestModItems {
     public static final Item SUSPICIOUS_SUBSTANCE = register("suspicious_substance", Item::new, new Item.Settings());
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
@@ -30,6 +30,6 @@ public class ModItems {
         /*获取用于修改 ingredients 组中的条目的事件。
         并注册一个事件处理程序，将我们的可疑项目添加到 ingredients 组。*/
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR)
-                .register((itemGroup) -> itemGroup.add(ModItems.SUSPICIOUS_SUBSTANCE));
+                .register((itemGroup) -> itemGroup.add(TestModItems.SUSPICIOUS_SUBSTANCE));
     }
 }

@@ -1,6 +1,6 @@
 package lalawr;
 
-import lalawr.item.ModItems;
+import lalawr.item.TestModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +20,6 @@ public class TestMod implements ModInitializer {
 		请谨慎行事。*/
 
 		LOGGER.info("Hello Fabric world!");
-		ModItems.initialize();
+		TestModItems.initialize();
 	}
 }
