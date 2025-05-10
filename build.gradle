@@ -11,11 +11,11 @@ base {
 }
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+/*在此处添加存储库以检索构件。
+	你应该只在依赖其他 Mod 时使用它，因为
+	Loom 添加了必要的 maven 存储库，以自动从 Minecraft 和库下载。
+	查看 https://docs.gradle.org/current/userguide/declaring_repositories.html
+	了解有关存储库的更多信息。*/
 }
 
 loom {
