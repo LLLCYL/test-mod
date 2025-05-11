@@ -7,6 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import java.util.function.Function;
 
@@ -14,7 +15,7 @@ public class TestModItems {
     public static final String TRANSLATION_KEY_PREFIX = RegistryKeys.ITEM.getValue().getPath();
 
     public static final Item SUSPICIOUS_SUBSTANCE = register("suspicious_substance", Item::new, new Item.Settings());
-    public static final Item CONTROL_STICK = register("control_stick", Item::new, new Item.Settings());
+    public static final Item CONTROL_STICK = register("control_stick", ControlStick::new, new Item.Settings().maxCount(1).rarity(Rarity.EPIC));
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
 
