@@ -21,5 +21,6 @@ public class TestModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator generator) {
         generator.register(TestModItems.SUSPICIOUS_SUBSTANCE, Models.GENERATED);
+        generator.register(TestModItems.CONTROL_STICK, Models.GENERATED);
     }
 }

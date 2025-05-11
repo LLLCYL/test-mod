@@ -14,6 +14,7 @@ public class TestModItems {
     public static final String TRANSLATION_KEY_PREFIX = RegistryKeys.ITEM.getValue().getPath();
 
     public static final Item SUSPICIOUS_SUBSTANCE = register("suspicious_substance", Item::new, new Item.Settings());
+    public static final Item CONTROL_STICK = register("control_stick", Item::new, new Item.Settings());
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
 

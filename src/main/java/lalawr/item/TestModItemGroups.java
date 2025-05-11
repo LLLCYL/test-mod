@@ -27,6 +27,7 @@ public class TestModItemGroups {
         // Register items to the custom item group.
         ItemGroupEvents.modifyEntriesEvent(TestModItemGroups.CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(TestModItems.SUSPICIOUS_SUBSTANCE);
+            itemGroup.add(TestModItems.CONTROL_STICK);
             itemGroup.add(TestModBlocks.CONDENSED_DIRT.asItem());
             // ...
         });

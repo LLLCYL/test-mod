@@ -18,6 +18,7 @@ public class TestModEnglishLangProvider extends FabricLanguageProvider{
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(TestModItems.SUSPICIOUS_SUBSTANCE,"Suspicious Substance");
+        translationBuilder.add(TestModItems.CONTROL_STICK,"Control Stick");
         translationBuilder.add(TestModBlocks.CONDENSED_DIRT,"Condensed Dirt");
         translationBuilder.add(TestModItemGroups.CUSTOM_ITEM_GROUP_KEY,"Test Mod Items");
     }
