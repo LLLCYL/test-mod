@@ -1,6 +1,7 @@
 package lalawr.item;
 
 import lalawr.TestMod;
+import lalawr.block.TestModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroup;
@@ -26,6 +27,7 @@ public class TestModItemGroups {
         // Register items to the custom item group.
         ItemGroupEvents.modifyEntriesEvent(TestModItemGroups.CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(TestModItems.SUSPICIOUS_SUBSTANCE);
+            itemGroup.add(TestModBlocks.CONDENSED_DIRT.asItem());
             // ...
         });
     }

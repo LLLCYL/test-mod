@@ -1,5 +1,6 @@
 package lalawr.datagen;
 
+import lalawr.block.TestModBlocks;
 import lalawr.item.TestModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -13,12 +14,12 @@ public class TestModModelProvider extends FabricModelProvider {
     }
 
     @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        //blockStateModelGenerator.registerSimpleCubeAll(Blocks.BLOCK_1);
+    public void generateBlockStateModels(BlockStateModelGenerator generator) {
+        generator.registerSimpleCubeAll(TestModBlocks.CONDENSED_DIRT);
     }
 
     @Override
-    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(TestModItems.SUSPICIOUS_SUBSTANCE, Models.GENERATED);
+    public void generateItemModels(ItemModelGenerator generator) {
+        generator.register(TestModItems.SUSPICIOUS_SUBSTANCE, Models.GENERATED);
     }
 }

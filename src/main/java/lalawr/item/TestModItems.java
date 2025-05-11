@@ -24,7 +24,7 @@ public class TestModItems {
 
         // Create the item instance.
         Item item = itemFactory.apply(settings.registryKey(itemKey).translationKey(
-                identifier.toTranslationKey(TRANSLATION_KEY_PREFIX)));
+                identifier.toTranslationKey(TestModItems.TRANSLATION_KEY_PREFIX)));
 
         // Register the item.
         Registry.register(Registries.ITEM, itemKey, item);
