@@ -3,6 +3,7 @@ package lalawr.block;
 import lalawr.TestMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -17,7 +18,17 @@ import java.util.function.Function;
 public class TestModBlocks {
     public static final String TRANSLATION_KEY_PREFIX = RegistryKeys.BLOCK.getValue().getPath();
     public static final Block CONDENSED_DIRT = register("condensed_dirt",
-            AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS)
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS).mapColor(MapColor.BROWN)
+    );
+    public static final Block COUNTER_BLOCK = register("counter_block",
+            Block::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.NETHER_WOOD).mapColor(MapColor.WHITE)
+    );
+    public static final Block PRISMARINE_LAMP = register(
+            "prismarine_lamp",
+            PrismarineLamp::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.LANTERN).mapColor(MapColor.CYAN)
+                    .luminance(PrismarineLamp::getLuminance)
     );
 
     private static Block register(String name, AbstractBlock.Settings settings) {

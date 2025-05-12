@@ -21,7 +21,7 @@ public class ControlStick extends Item {
         BlockState blockState = world.getBlockState(blockPos);
         PlayerEntity player = context.getPlayer();
         if (player != null) {
-            player.sendMessage(Text.of(blockState.toString()),false);
+            player.sendMessage(Text.of(blockState.toString()),true);
         }
         return ActionResult.SUCCESS;
     }

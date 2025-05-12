@@ -20,6 +20,8 @@ public class TestModEnglishLangProvider extends FabricLanguageProvider{
         translationBuilder.add(TestModItems.SUSPICIOUS_SUBSTANCE,"Suspicious Substance");
         translationBuilder.add(TestModItems.CONTROL_STICK,"Control Stick");
         translationBuilder.add(TestModBlocks.CONDENSED_DIRT,"Condensed Dirt");
+        translationBuilder.add(TestModBlocks.COUNTER_BLOCK,"Counter");
+        translationBuilder.add(TestModBlocks.PRISMARINE_LAMP,"Prismarine Lamp");
         translationBuilder.add(TestModItemGroups.CUSTOM_ITEM_GROUP_KEY,"Test Mod Items");
     }
 }

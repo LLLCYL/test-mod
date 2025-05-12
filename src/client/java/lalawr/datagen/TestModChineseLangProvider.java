@@ -20,6 +20,8 @@ public class TestModChineseLangProvider extends FabricLanguageProvider{
         translationBuilder.add(TestModItems.SUSPICIOUS_SUBSTANCE,"可疑的物品");
         translationBuilder.add(TestModItems.CONTROL_STICK,"控制棒");
         translationBuilder.add(TestModBlocks.CONDENSED_DIRT,"压缩泥土");
+        translationBuilder.add(TestModBlocks.COUNTER_BLOCK,"计数器");
+        translationBuilder.add(TestModBlocks.PRISMARINE_LAMP,"海晶石灯");
         translationBuilder.add(TestModItemGroups.CUSTOM_ITEM_GROUP_KEY,"测试模组物品");
     }
 }

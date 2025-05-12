@@ -29,6 +29,8 @@ public class TestModItemGroups {
             itemGroup.add(TestModItems.SUSPICIOUS_SUBSTANCE);
             itemGroup.add(TestModItems.CONTROL_STICK);
             itemGroup.add(TestModBlocks.CONDENSED_DIRT.asItem());
+            itemGroup.add(TestModBlocks.COUNTER_BLOCK.asItem());
+            itemGroup.add(TestModBlocks.PRISMARINE_LAMP.asItem());
             // ...
         });
     }
