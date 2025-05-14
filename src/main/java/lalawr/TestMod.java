@@ -1,6 +1,7 @@
 package lalawr;
 
 import lalawr.block.TestModBlocks;
+import lalawr.block.entity.TestModBlockEntityTypes;
 import lalawr.item.TestModItemGroups;
 import lalawr.item.TestModItems;
 import net.fabricmc.api.ModInitializer;
@@ -25,5 +26,6 @@ public class TestMod implements ModInitializer {
 		TestModItems.initialize();
 		TestModItemGroups.initialize();
 		TestModBlocks.initialize();
+		TestModBlockEntityTypes.initialize();
 	}
 }

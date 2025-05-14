@@ -21,7 +21,7 @@ public class TestModBlocks {
             AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS).mapColor(MapColor.BROWN)
     );
     public static final Block COUNTER_BLOCK = register("counter_block",
-            Block::new,
+            CounterBlock::new,
             AbstractBlock.Settings.create().sounds(BlockSoundGroup.NETHER_WOOD).mapColor(MapColor.WHITE)
     );
     public static final Block PRISMARINE_LAMP = register(
