@@ -4,6 +4,7 @@ import lalawr.block.TestModBlocks;
 import lalawr.block.entity.TestModBlockEntityTypes;
 import lalawr.item.TestModItemGroups;
 import lalawr.item.TestModItems;
+import lalawr.server.command.TestModCommandManager;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,5 +28,6 @@ public class TestMod implements ModInitializer {
 		TestModItemGroups.initialize();
 		TestModBlocks.initialize();
 		TestModBlockEntityTypes.initialize();
+		TestModCommandManager.initialize();
 	}
 }
