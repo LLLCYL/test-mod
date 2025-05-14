@@ -31,6 +31,7 @@ public class TestModItemGroups {
             itemGroup.add(TestModBlocks.CONDENSED_DIRT.asItem());
             itemGroup.add(TestModBlocks.COUNTER_BLOCK.asItem());
             itemGroup.add(TestModBlocks.PRISMARINE_LAMP.asItem());
+            itemGroup.add(TestModBlocks.CONDENSED_OAK_LOG.asItem());
             // ...
         });
     }

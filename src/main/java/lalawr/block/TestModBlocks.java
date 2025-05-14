@@ -4,6 +4,7 @@ import lalawr.TestMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -20,15 +21,15 @@ public class TestModBlocks {
     public static final Block CONDENSED_DIRT = register("condensed_dirt",
             AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS).mapColor(MapColor.BROWN)
     );
-    public static final Block COUNTER_BLOCK = register("counter_block",
-            CounterBlock::new,
+    public static final Block COUNTER_BLOCK = register("counter_block", CounterBlock::new,
             AbstractBlock.Settings.create().sounds(BlockSoundGroup.NETHER_WOOD).mapColor(MapColor.WHITE)
     );
-    public static final Block PRISMARINE_LAMP = register(
-            "prismarine_lamp",
-            PrismarineLamp::new,
+    public static final Block PRISMARINE_LAMP = register("prismarine_lamp", PrismarineLamp::new,
             AbstractBlock.Settings.create().sounds(BlockSoundGroup.LANTERN).mapColor(MapColor.CYAN)
                     .luminance(PrismarineLamp::getLuminance)
+    );
+    public static final Block CONDENSED_OAK_LOG = register("condensed_oak_log", PillarBlock::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOD).mapColor(MapColor.BROWN)
     );
 
     private static Block register(String name, AbstractBlock.Settings settings) {
